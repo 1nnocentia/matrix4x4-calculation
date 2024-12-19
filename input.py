@@ -1,9 +1,8 @@
-def input_matrix():
-    print("Masukkan elemen matriks 4x4 (16 elemen):")
+def input_matrix(c):
     matrix = []
-    for i in range(4):
+    for i in range(c):
         row = []
-        for j in range(4):
+        for j in range(c):
             value = float(input(f"Masukkan elemen [{i+1}, {j+1}]: "))
             row.append(value)
         matrix.append(row)
