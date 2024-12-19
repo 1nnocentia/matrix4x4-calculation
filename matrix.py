@@ -4,7 +4,7 @@ from pengurangan_matrix import pengurangan
 from perkalian_matrix import perkalian
 from transpose_matrix import transpose
 from determinant_matrix import determinant
-'''from invers_matrix import invers'''
+from invers_matrix import invers
 
 a = ''
 
@@ -62,7 +62,7 @@ while a != 'q':
                 result = determinant(m)
                 print('Determinant dari Matrix:')
             case 6:
-                result = invers(m)
+                result = invers(m, c)
                 print('Invers dari Matrix:')
 
     if isinstance(result, list):
@@ -71,4 +71,4 @@ while a != 'q':
     else:
         print(f'Hasil: {result}')
 
-    a = input('Apakah masih ingin menggunakan calculator matrix? (y=lanjut, q=keluar)')
+    a = input('Apakah masih ingin menggunakan calculator matrix? (y=lanjut, q=keluar): ')
